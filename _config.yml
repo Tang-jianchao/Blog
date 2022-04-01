@@ -102,8 +102,9 @@ theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+# 推送到 blog仓库 静态站点展示博文
 deploy:
   type: git
-  repo: https://github.com/Tang-jianchao/Tang-jianchao.github.io.git #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+  repo: https://github.com/Tang-jianchao/blog.git #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
   branch: main
   message: init
