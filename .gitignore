@@ -1,6 +1,7 @@
 node_modules
 /dist
 /public
+.deploy
 db.json
 
 selenium-debug.log

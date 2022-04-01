@@ -106,5 +106,5 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/Tang-jianchao/blog.git #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
-  branch: main
+  branch: gh-pages
   message: init
