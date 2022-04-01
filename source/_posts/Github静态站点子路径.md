@@ -1,6 +1,8 @@
----
+\---
+
 title: Github静态站点子路径部署项目
----
+
+\---
 
 ### github站点包含多个子项目
 
@@ -12,13 +14,11 @@ title: Github静态站点子路径部署项目
 
 1. ### xxx.github.io 根路径
 
-   https://github.com/Tang-jianchao/Tang-jianchao.github.io 仓库中仅仅保留一个index.html文件用于  https://tang-jianchao.github.io/  根路径访问 展示。
+   https://github.com/Tang-jianchao/Tang-jianchao.github.io 仓库中仅仅保留一个index.html文件用于  https://tang-jianchao.github.io/  根路径访问。
 
    
 
 2. ### blog子路径
-
-   新建一个用于存放blog静态文件的仓库 https://github.com/Tang-jianchao/blog 
 
    在hexo搭建的博客项目中, 修改  _config.yml 文件中的内容:
 
@@ -34,36 +34,36 @@ title: Github静态站点子路径部署项目
    
    deploy:
      type: git
-   	# 这里把 npm run deploy 命令一键部署的仓库设置为上面创建用来存放blog的仓库
-     repo: https://github.com/Tang-jianchao/blog.git #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
-     branch: main
+     repo: https://github.com/Tang-jianchao/hexoProject.git
+   	# 该分支专门用来存放 静态资源
+     branch: gh-pages 
      message: init
    ```
 
-   这一步很重要!!!  *其他路径的仓库也需要开启才能正确访问到* 
+   执行 ` npm run deploy` 命令后, hexo 会把构建后的内容推送到当前仓库的 `gh-pages` 分支 
+
+   GitHub 会默认把该分支作为  github站点子路径的访问来源
+
+   如果想用其他分支作为来源就需要修改（在设置过程中，遇到了只有 public 的仓库 才可以设置的情况 ）: 
 
    **blog- setting - pages**  设置 **github Page** 选择当前的分支  **Save**
 
-   ![image-20220401153559499](/Users/admin/Library/Application Support/typora-user-images/image-20220401153559499.png)
+   ![](../images/github-pages.png)
 
    验证: https://github.com/Tang-jianchao/blog 
 
-3. Project
-
    
 
+3. Project
 
+   和 blog仓库原理相同, 不同的地方是需要手动部署项目。
 
+   创建 gh-pages 分支 构建好之后 只提交构建后的产物  并在仓库中 设置好github pages的分支来源
 
+   注意 正确设置 publicPath的路径， 例如 这里以 为例 所以设置 publicPath: /project/
 
+   后续考虑 借鉴 hexo 一键部署的思路来发布子项目
 
+   验证: https://github.com/Tang-jianchao/vue-admin
 
-### blog   一键部署  安装插件 推送的repo为站点的子目录
-
-
-
-
-
-project
-
-静态资源public 设置
+   
