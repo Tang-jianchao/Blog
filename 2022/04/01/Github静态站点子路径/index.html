@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="Hi there">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.3.0">
+    <meta name="root" content="/blog/">
+    <link rel="dns-prefetch" href="https://tang-jianchao.github.io/blog">
+    <!--SEO-->
+
+<meta name="keywords" content="" />
+
+
+<meta name="description" content="前言: 希望通过github部署的个人站点，能够支持不同目录访问到不同的项目。例如: https://tang-jianchao.github.io/ 首页https://tang-jianch..." />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    Github站点子路径展示不同项目 |
+    
+    Hi there
+</title>
+
+<link rel="alternate" href="/atom.xml" title="Hi there" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/blog/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/blog/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/blog/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+<meta name="generator" content="Hexo 5.4.1"></head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    https://hexo-theme-snippet-1251680922.cos.ap-beijing.myqcloud.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='tang-jianchao'>
+            <img src="/blog/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="https://tang-jianchao.github.io/blog">
+                        Hi there</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/blog/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="Github站点子路径展示不同项目">
+            
+            Github站点子路径展示不同项目
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2022/04/01</span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <p>前言: 希望通过github部署的个人站点，能够支持不同目录访问到不同的项目。<br>例如:<br> <a href="https://tang-jianchao.github.io/">https://tang-jianchao.github.io/</a> 首页<br><a href="https://tang-jianchao.github.io/blog/">https://tang-jianchao.github.io/blog/</a> 博客<br><a href="https://tang-jianchao.github.io/projectA">https://tang-jianchao.github.io/projectA</a> 项目A<br><a href="https://tang-jianchao.github.io/projectB">https://tang-jianchao.github.io/projectB</a> 项目B</p>
+<ol>
+<li><h3 id="xxx-github-io-根路径"><a href="#xxx-github-io-根路径" class="headerlink" title="xxx.github.io 根路径"></a>xxx.github.io 根路径</h3><p>以 <code>username.github.io</code> 命名的仓库中保留包含 <code>index.html </code> 文件，用于 <code>https://username.github.io/</code> 根路径访问。</p>
+</li>
+<li><h3 id="blog子路径"><a href="#blog子路径" class="headerlink" title="blog子路径"></a>blog子路径</h3><p> 在hexo搭建的博客项目中( 参见: <a href="https://tang-jianchao.github.io/blog/2022/04/01/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9/">https://tang-jianchao.github.io/blog/2022/04/01/搭建个人静态博客站点/</a> ), 修改  _config.yml 文件中的内容:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line"># 访问blog的地址</span><br><span class="line">url: https://tang-jianchao.github.io/blog </span><br><span class="line">root: /blog/ # 设置hexo的根路径</span><br><span class="line">permalink: :year/:month/:day/:title</span><br><span class="line"></span><br><span class="line">...此处省略其他配置项...</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/Tang-jianchao/hexoProject.git # hexo项目仓库</span><br><span class="line">  branch: gh-pages  #该分支专门用来存放部署的文件</span><br><span class="line">  message: init</span><br></pre></td></tr></table></figure>
+
+<p>执行 <code> npm run deploy</code> 命令后, <em>hexo</em> 会把构建后的内容推送到 <em>repo</em> 的 <code>gh-pages</code> 分支 </p>
+<p>GitHub 会默认把该分支作为  github站点子路径的访问来源。</p>
+<p>如果没有设置该分支, 就手动调整。</p>
+<p>想用其他分支作为来源就需要修改（在设置过程中，遇到了只有 public 的仓库 才可以设置的情况 ）: </p>
+<p><strong>blog- setting - pages</strong>  设置 <strong>github Page</strong> 选择当前的分支  <strong>Save</strong></p>
+<img src="https://tang-jianchao.github.io/blog/images/github-pages.png" class="" title="github-pages.png" alt="github-pages.png">
+
+<p>验证: <a href="https://tang-jianchao.github.io/blog/">https://tang-jianchao.github.io/blog/</a></p>
+</li>
+<li><p>Project</p>
+<p>和 blog仓库原理相同, 不同的地方是需要手动部署项目。</p>
+<p>创建 gh-pages 分支 构建好之后 只提交构建后的产物  并在仓库中 设置好github pages的分支来源</p>
+<p>注意 正确设置 publicPath的路径， 例如 这里以 为例 所以设置 publicPath: /project/</p>
+<p>后续考虑 借鉴 hexo 一键部署的思路来发布子项目</p>
+<p>验证: <a href="https://tang-jianchao.github.io/vue-element-admin/">https://tang-jianchao.github.io/vue-element-admin/</a></p>
+</li>
+</ol>
+
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+            转载声明：
+            商业转载请联系作者获得授权,非商业转载请注明出处
+            
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    
+    <a href="/blog/2022/04/01/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9/" class="next-post btn btn-default" title='搭建个人静态博客站点'>
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            搭建个人静态博客站点</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
+    
+</div>
+
+<div id="comments">
+    
+    
+<div class="utteranc">
+  
+  <script
+    src='https://utteranc.es/client.js'
+    repo='Tang-jianchao/snippet-comment'
+    issue-term='pathname'
+    issue-number=''
+    theme='github-light'
+    label=''
+    crossorigin='anonymous'
+    async
+  ></script>
+</div>
+
+
+
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#xxx-github-io-%E6%A0%B9%E8%B7%AF%E5%BE%84"><span class="toc-text">xxx.github.io 根路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#blog%E5%AD%90%E8%B7%AF%E5%BE%84"><span class="toc-text">blog子路径</span></a></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2022
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/blog/js/app.js?rev=@@hash.js"></script>
+
+</body>
+</html>
