@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Tang's Blog
+title: Hi there
 subtitle: '日进一寸'
-description: '前端 react 逗猫棒的铲屎官'
-keywords: 逗猫棒的铲屎官
-author: tangjianchao
+description: '真正的大师,永远怀着一颗学徒的心'
+keywords: 
+author: tang-jianchao
 language: zh-CN
 timezone: ''
 
@@ -98,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: snippet
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
